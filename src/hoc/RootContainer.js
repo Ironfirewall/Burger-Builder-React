@@ -1,3 +1,3 @@
-const rux = (props) => props.children;
+const rootContainer = (props) => props.children;
 
 export default rootContainer;
