@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Burger from '../../components/Burger/Burger';
-import Aux from '../../hoc/Aux';
+import RootContainer from '../../hoc/RootContainer';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 
 const INGREDIENT_BASE_PRICE = {
@@ -42,14 +42,14 @@ class BurgerBuilder extends Component{
 
     render() {
         return(
-            <Aux>
+            <RootContainer>
                 <div>Burger</div>
                 <div>Build Control</div>
                 <Burger ingredients={this.state.ingredients}/>
                 <BuildControls
                     ingredientAdded={this.addIngredientHandler}
                 />
-            </Aux>
+            </RootContainer>
         );
     }
 }
